@@ -51,7 +51,10 @@ Swal.fire({
 }).then((result) => {
   if (result.dismiss === Swal.DismissReason.timer) {
     console.log('I was closed by the timer')
-    window.open('https://rflsza13.github.io/Loves_Garden/page/garden.html', "_self");
+    setTimeout(() => {
+      window.open('aceite.html', "_self");
+      // window.open('https://rflsza13.github.io/Loves_Garden/page/garden.html', "_blank");
+    }, "1000");
   }
 })
 
