@@ -3,13 +3,12 @@ let usuarios = [sessionStorage.getItem("user1"), sessionStorage.getItem("user2")
 let senhas = [sessionStorage.getItem("senha1"), sessionStorage.getItem("senha2")];
 
 function login() {
-    console.log(usuarios)
     let user = document.getElementById('txt_user').value;
     let password = document.getElementById('txt_key').value;
 
     for(let i = 0; i < usuarios.length; i++){
         if(user.toLowerCase() == usuarios[i]){
-            if(password == senhas[0]){
+            if(password == senhas[i]){
                 garden();
                 return;
             } else {
